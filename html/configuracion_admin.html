@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Configuracion</title>
+    <link rel="stylesheet" href="../css/csstoall.css">
+    <script type="text/javascript" src="../js/configuracion_admin.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <header><a href="../index.php" class="logo-menu"><img src="../img/gt-logo.png"></a></header>
+                    
+            <nav id="nav_principal">
+                <ul>
+                    <li><a href="../index.php">Inicio</a></li>
+                    <li><a href="../php/producto_listado.php">Ver productos</a></li>
+                    <li></li><a href="../html/producto_nuevo.html">Agregar productos</a></li>
+                    <li><a href="../php/cliente_listado.php">Ver listado de clientes</a></li>
+                    <li><a href="configuracion_admin.html">Configuracion</a></li>
+                    <li><a href="../php/cerrar_session.php">Cerrar session</a></li>
+                </ul>
+            </nav>
+    </div>
+
+    <main>
+        <section>
+            <article>
+                <form action="../php/configuracion_admin.php" method="POST">
+                    <label class="label_configuracion_admin" for="display_inline_flex"><figure class="display_inline_flex">
+                    <img src="../img/display_inline_flex.jpg" class="img_display"><figcaption></figcaption>Mostrar en conjunto</figure>
+
+                        <input type="radio" value="display_inline_flex" onclick="cambiarImagen('display_inline_flex')" id="display_inline_flex" name="display" required>
+
+                    </label>
+
+                    <label class="label_configuracion_admin" for="display_block"><figure class="display_block">
+                    <img src="../img/display_block.jpg" class="img_display"><figcaption></figcaption>Mostrar en Listado</figure>
+
+                        <input type="radio" value="display_block" onclick="cambiarImagen('display_block')" id="display_block" name="display" required>
+
+                </label>
+
+                <img src="../img/display_inline_flex.jpg" alt="mostrar conjunto" id="seleccion" class="img_display_seleccion">
+                <div class="input_configuracion_admin">
+                    <input type="submit" value="Guardar">
+                    <input type="reset" value="Cancelar">
+                </div>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

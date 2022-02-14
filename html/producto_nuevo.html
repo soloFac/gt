@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <main>
+        <section>
+            <article>
+                <h2>Agregar Producto</h2>
+                <form id="form_agregar_producto" action="../php/producto_nuevo.php" method="POST" enctype="multipart/form-data">
+                    <label for="nombre">
+                        Nombre del Producto: <input type="text" id="nombre" name="nombre_producto" maxlength="80" placeholder="Cuadro GT Zaskar Pro r26">
+                    </label>
+                    <label for="precio">
+                        Precio: <input type="number" id="precio" name="precio" placeholder="12000">
+                    </label>
+                    <label for="descripcion">
+                        Descripcion: <input type="text" id="descripcion" name="descripcion" placeholder="Cuadro triple triangle marca GT color blanco con lineas azules">
+                    </label>
+                    <label for="especificaciones">
+                        Espeficaciones: <input type="text" id="especificaciones" name="especificaciones" placeholder="Ej: 
+                                                                                                      Peso: 2316
+                                                                                                      Talle: M
+                                                                                                      Horquilla: RockShox 30 Gold TK 27.5/29 Solo Air 
+                                                                                                      Cambio: Shimano SLX Shadow Plus, RD-M7000-GS 
+                                                                                                      Cambio: Shimano SLX, SL-M7000, Rapid Fire 
+                                                                                                      Casete: Sunrace CS-MX8, 11-46T, 11-Speed 
+                                                                                                      Cadena: KMC X11-1  ">
+                    </label>
+                    <label for="imagen">
+                        <input type="file" id="imagen" name="imagen" required>
+                    </label>
+
+                        <input type="submit" value="Agregar Producto">
+                        <a href="../index.php"><input type="button" value="Regresar"></a>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

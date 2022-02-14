@@ -1,0 +1,426 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+/*------------------------------------ CSS PARA MENU ---------------------------------------*/
+
+.menu{
+    background: black;
+}
+
+#nav_principal, header{
+    display: inline-block;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#nav_principal ul li{
+    display: inline-block;
+}
+
+/*------------------------------------ END OF CSS PARA MENU ---------------------------------------*/
+
+#foto_modificar{
+    width: 5em;
+    border-radius: 10em;
+}
+#icono{
+    width: 3em;
+}
+#tabla_modificar_cliente{
+    text-align: center;
+}
+
+#foto_usuario_modificar, #foto_usuario_borrar_ok{
+    width: 5em;
+}
+#icono_confirmar_borrar_ok, #icono_regresar_borrar_ok{
+    width: 4em;
+}
+/* 
+#nav_principal ul li{
+    display: inline-block;
+    margin: 0.5em;
+    padding: 1em;
+    background: crimson;
+    border: black 1px solid;
+    color: white;
+} */
+
+/*------------------------------------CSS PARA MENU---------------------------------------*/
+
+/* section{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, .5);
+    padding: 0 100px;
+    box-sizing: border-box;
+} */
+
+/*------------------------------------ FOOTER ---------------------------------------*/
+
+footer{
+    background: black;
+    color: white;
+    padding: 0.6em;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/*------------------------------------ PRODUCTOS HTML ---------------------------------------*/
+#section_productos{
+    background-image: url(../img/gt_fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+#article_producto0, #article_producto1, #article_producto2, #article_producto3, #article_producto4, 
+#article_producto5, #article_producto6, #article_producto7, #article_producto8, #article_producto9, #article_producto10{
+    width: 30em;
+    height: 20em;
+    display: inline-flex;
+    margin: 3em;
+} 
+*{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+.card .front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30em;
+    height: 20em;
+    background: rgb(87, 160, 219);
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+.card .front img{
+    position: relative;
+    width: 30em;
+    height: 20em;
+}
+.card:hover .front{
+    transform: rotateX(-180deg);
+}
+.card .back{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 30em;
+    height: 20em;
+    background: rgb(87, 160, 219);
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+.card .back:before{
+    content: '';
+    position: relative;
+    top: 0;
+    left: -50%;
+    width: 30em;
+    height: 20em;
+    background: rgba(0, 0, 0, 0.3);
+}
+.card:hover .back{
+    transform: rotateX(0deg);
+}
+
+.card .back .details{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card .back .details h2{
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+.card .back .details h2 span{
+    color: #0c0c0c8e;
+    font-size: 16px;
+}
+.card .back .details h3{
+    color: #fff;
+}
+
+.card .back .details p{
+    color: #fff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/*------------------------------------ BUTTON CSS ---------------------------------------*/
+article{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 5px 13px;
+    color: #21f3bf;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+a:hover{
+    color: #255784;
+    padding: 1em;
+    background: #21f3bf;
+    box-shadow: 0 0 10px #21f3bf, 0 0 40px #21f3bf, 0 0 80px #21f3bf;
+    transition-delay: 1s;
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#21f3bf);
+}
+a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#21f3bf);
+}
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,#21f3bf);
+}
+a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,#21f3bf);
+}
+a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.card .back .details button{
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid black;
+    background: rgb(54, 144, 218);
+    text-decoration: none;
+}
+
+/*------------------------------------ CSS TO FORM CLIENTE MODIFICAR ---------------------------------------*/
+#form_cliente_modificar{
+    padding-left: 30em;
+    margin-bottom: 5em;
+}
+#header_cliente_modificar{
+    margin-left: 27em;
+}
+
+#foto_cliente_modificar{
+    width: 6em;
+    padding-left: 5em;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    border-radius: 50%;
+}
+
+label{
+    display: block;
+    margin: 1em;
+    /* font-family: consolas; */
+}
+
+input{
+    padding: 0.3em;
+}
+
+/*------------------------------------ CSS TO CONFIGURACION ADMIN ---------------------------------------*/
+
+.img_display{
+    width: 8em;
+    display: inline-block;
+}
+.label_configuracion_admin{
+    display: inline-block;
+    margin-left: 20em;
+    padding-top: 2em;
+}
+
+.img_display_seleccion{
+    width: 35em;
+    margin-left: 21em;
+    margin-top: 1em;
+}
+
+.img_display, .img_display_seleccion{
+    display: block;
+}
+
+.input_configuracion_admin, .img_display_seleccion{
+    display: block;
+}
+.input_configuracion_admin{
+    margin-left: 35em;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+/*------------------------------------ CSS TO FORM BUSCADOR ---------------------------------------*/
+
+#nav_buscador{
+    margin-right: 1em;
+}
+
+#nav_buscador ul li{
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+/*------------------------------------ CSS TO FORM CLIENTE NUEVO ---------------------------------------*/
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#section_login{
+    background-image: url('../img/gt.jpg');
+    background-size: cover;
+    height: 65em;
+    font-family: sans-serif;
+}
+
+.container_login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.signIn_login{
+    position: relative;
+    widows: 100%;
+    height: 50px;
+    background: #756610;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+
+.fold_login{
+    position: relative;
+    width: 100%;
+    background: rgb(17, 24, 34, .8);
+    transform-origin: top;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: perspective(2000px) rotateX(90deg));
+}
+
+.fold_login.active{
+    transform: perspective(2000px) rotateX(0deg);
+}
+.fold_login form input[type="text"],
+.fold_login form input[type="password"]{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+::placeholder{
+    color: #fff;
+}
+.fold_login form input[type="submit"],
+.fold_login form input[type="button"]{
+    display: block;
+    padding: 12px 40px;
+    border-radius: 40px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1d2b38;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+.fold_login form input[type="submit"]:hover{
+    background: #756610;
+}
+

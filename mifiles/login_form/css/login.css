@@ -1,0 +1,180 @@
+:root{
+    --title-form: #ffffff;
+    --ph-color: rgb(158, 158, 158);
+    --submit-bg: #705E78;
+    /* formulario */
+    --ancho-form: 50%;
+    --alto-form: 100vh;
+    --bg-form: #1a1a1ace;
+    --bg-color-form: #1A1A1A;
+    --bg-login: #ffc80067;
+    --line-form: rgb(194, 194, 194);
+    /* flecha */
+    --amarillo: #FFC900;
+    --anaranjado: #ffbb00;
+    --gris-claro: #F2F2F2;
+    --gris-oscuro: #4D4D4D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Sotokaromi Bold';
+    src: url(../font/SotokaromiBold.otf) format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'ApercuMonoPro';
+    src: url(../font/monopro/ApercuMonoProRegular.ttf) format('opentype');
+    /* font-weight: bold; */
+}
+
+@font-face {
+    font-family: 'DIN2014 Regular';
+    src: url(../font/din/DIN2014-Regular.ttf) format('opentype');
+}
+
+/* change bg autocomplete chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #c28e00 inset !important;
+}
+/* change color autocomplete chrome */
+input:-webkit-autofill{
+    -webkit-text-fill-color: var(--gris-claro) !important;
+}
+
+.fondo{
+    width: 100vw;
+    height: var(--alto-form);
+    background: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+/* .left{
+    width: 50%;
+    height: var(--alto-form);
+    float: left;
+    background: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position-y: -8em;
+} */
+
+.rigth{
+    width: 50%;
+    height: var(--alto-form);
+    color: var(--title-form);
+    background-color: var(--bg-form);
+    float: right;
+}
+
+.rigth h1{
+    position: relative;
+    width: 35vw;
+    height: 18vh;
+    /* background-color: red; */
+    /* left: 35%; */
+    left: 25%;
+    margin-top: 15vh;
+    /* margin-bottom: 1em; */
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Sotokaromi Bold';
+    font-size: 9vh;
+}
+
+form{
+    position: relative;
+    width: 30vw;
+    height: 40vh;
+    left: 30%;
+}
+
+
+input[type="text"],
+input[type="password"]{
+    display: block;
+    width: 30vw;
+    background-color: var(--bg-login);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--anaranjado);
+    border-right: 2px solid var(--anaranjado);
+    border-radius: 0.6em;
+    margin-bottom: 6vh;
+    padding: 0.4em;
+    color: var(--gris-claro);
+    -webkit-border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -ms-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="button"]{
+    font-family: 'DIN2014 Regular';
+    font-size: 1.1em;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder{
+    text-transform: capitalize;
+    color: var(--gris-claro);
+}
+
+
+input[type="submit"], input[type="button"]{
+    position: absolute;
+    margin-top: 2em;
+    padding: 0.5em 2em;
+    letter-spacing: 0.1em;
+    bottom: 0;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+
+input[type="submit"]{
+    right: 0;
+    background-color: #4d4d4d;
+    border: none;
+    box-shadow: 1px 1px 8px 2px rgba(2, 2, 2, 0.75);
+    color: var(--gris-claro);
+}
+
+input[type="button"]{
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.089);
+    color: var(--amarillo);
+    border: none;
+}
+
+.logo{
+    position: relative;
+    height: 20vmax;
+    top: 50%;
+    left: 6vmin;
+    margin-top: -10vmax;
+}
+
+.flecha{
+    position: absolute;
+    width: 25%;
+    height: var(--alto-form);
+    left: 37%;
+    z-index: 100;
+}

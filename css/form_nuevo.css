@@ -1,0 +1,93 @@
+:root{
+    --ancho: 50vw;
+    --alto-section: 85vh;
+    --input-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+}
+
+section{
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    background-color: rgb(117, 4, 4);
+    width: 100vw;
+    height: var(--alto-section);
+}
+
+article:nth-child(1){
+    background-color: #00344d;
+}
+
+article:nth-child(2){
+    overflow: hidden;
+}
+
+article img{
+    max-width: 70vw;
+}
+
+
+article{
+    /* height: var(--alto-section); */
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
+
+form{
+    width: 70vw;
+    height: var(--alto-section);
+    overflow-y: hidden;
+    background-color: #CBCBCB;
+    font-weight: 900;
+    font-size: 1em;
+    /* padding-top: 2em; */
+    /* margin-top: 2em; */
+}
+
+form input::placeholder{
+    font-family: sans-serif;
+    font-size: 1.11rem;
+    text-transform: capitalize;
+    color: var(--input-color);
+}
+
+
+label{
+    line-height: 4em;
+    background-color: #B4BEC9;
+}
+
+input{
+    padding: 0.6em;
+    background-color: #4B4B4B;
+    color: var(--input-color);
+}
+
+#btn-registro, #btn-cancelar{
+    display: inline-block;
+}
+
+.title{
+    position: absolute;
+    color: white;
+    top: 1em;
+    left: 6em;
+    z-index: 100;
+}
+
+.form__item{
+    width: 45%;
+    display: inline-block;
+}
+
+.form__item:nth-child(odd){
+    margin-left: 4em;
+}
+
+

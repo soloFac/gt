@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/menu.css">
-    <!-- <link rel="stylesheet" href="../../css/normalize.css"> -->
-    <title>GT Bicicles</title>
-</head>
+<?php
+    include 'php/headers/header.php'
+?>
 <body>
     <main>
         <nav class="menu-principal">
@@ -19,13 +12,13 @@
                     <a class="menu-principal__item__a" href="index.php">Inicio</a>
                 </li>
                 <li class="menu-principal__item">
-                    <a class="menu-principal__item__a" href="">Productos</a>
+                    <a class="menu-principal__item__a" href="php/producto/listado.php">Productos</a>
                 </li>
                 <li class="menu-principal__item">
                     <a class="menu-principal__item__a" href="html/logueo.html">Login</a>
                 </li>
                 <li class="menu-principal__item">
-                    <a class="menu-principal__item__a" href="html/cliente_nuevo.html">Registrarme</a>
+                    <a class="menu-principal__item__a" href="php/cliente/form_nuevo.php">Registrarme</a>
                 </li>
             </ul>
         </nav>

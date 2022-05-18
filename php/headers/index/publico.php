@@ -1,4 +1,5 @@
 <?php
+    $ruta = './';
     include 'php/headers/header.php'
 ?>
 <body>
@@ -9,7 +10,7 @@
             </header>
             <ul class="menu-principal__ul">
                 <li class="menu-principal__item">
-                    <a class="menu-principal__item__a" href="index.php">Inicio</a>
+                    <a class="menu-principal__item__a" id="prueba" href="index.php">Inicio</a>
                 </li>
                 <li class="menu-principal__item">
                     <a class="menu-principal__item__a" href="php/producto/listado.php">Productos</a>

@@ -7,5 +7,7 @@
     <link rel="stylesheet" href="<?php echo $ruta?>css/normalize.css">
     <link rel="stylesheet" href="<?php echo $ruta?>css/menu.css">
     <link rel="stylesheet" href="<?php echo $ruta?>css/footer.css">
+    <link rel="stylesheet" href="./css/prueba.css">
     <!-- <link rel="stylesheet" href="../../css/normalize.css"> -->
-    <title>GT Bicicles</title>
+    <title>A</title>
+</head>

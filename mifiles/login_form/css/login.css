@@ -14,6 +14,8 @@
     --anaranjado: #ffbb00;
     --gris-claro: #F2F2F2;
     --gris-oscuro: #4D4D4D;
+    /* inputs */
+    --width-input: 30vw;
 }
 
 *{
@@ -22,6 +24,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+/* html, body, article, section{
+    min-height: 100vh;
+} */
 
 @font-face {
     font-family: 'Sotokaromi Bold';
@@ -59,6 +65,9 @@ input:-webkit-autofill{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* .left{
@@ -77,42 +86,47 @@ input:-webkit-autofill{
     color: var(--title-form);
     background-color: var(--bg-form);
     float: right;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .rigth h1{
     position: relative;
     width: 35vw;
-    height: 18vh;
-    /* background-color: red; */
-    /* left: 35%; */
+    /* height: 18vh; */
     left: 25%;
-    margin-top: 15vh;
-    /* margin-bottom: 1em; */
+    margin-bottom: 7vmin;
+    /* margin-top: 10vh; */
     text-align: center;
     text-transform: uppercase;
     font-family: 'Sotokaromi Bold';
-    font-size: 9vh;
+    font-size: 5vw;
 }
 
 form{
     position: relative;
     width: 30vw;
-    height: 40vh;
+    height: min-content;
     left: 30%;
+    /* top: -3em; */
 }
 
+input[type="text"]{
+    margin-bottom: 6vmin;
+}
 
 input[type="text"],
 input[type="password"]{
     display: block;
-    width: 30vw;
+    width: var(--width-input);
     background-color: var(--bg-login);
     outline: none;
     border: none;
     border-bottom: 2px solid var(--anaranjado);
     border-right: 2px solid var(--anaranjado);
     border-radius: 0.6em;
-    margin-bottom: 6vh;
     padding: 0.4em;
     color: var(--gris-claro);
     -webkit-border-radius: 0.6em;
@@ -122,30 +136,51 @@ input[type="password"]{
 }
 
 input[type="text"],
+input[type="password"]{
+    font-size: 2vw;
+}
+
+input[type="submit"],
+input[type="button"]{
+    font-size: 1.8vw;
+}
+
+
+input[type="text"],
 input[type="password"],
 input[type="submit"],
 input[type="button"]{
     font-family: 'DIN2014 Regular';
-    font-size: 1.1em;
+    /* font-size: 1.1em; */
+    /* font-size: 2vw; */
 }
 
 input[type="text"]::placeholder,
 input[type="password"]::placeholder{
     text-transform: capitalize;
     color: var(--gris-claro);
+    font-size: 2vw;
 }
 
+.submit_buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vmin;
+}
 
 input[type="submit"], input[type="button"]{
-    position: absolute;
+    position: relative;
     margin-top: 2em;
     padding: 0.5em 2em;
     letter-spacing: 0.1em;
-    bottom: 0;
+    /* bottom: 0; */
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     -ms-border-radius: 0.5em;
     -o-border-radius: 0.5em;
+    cursor: pointer;
 }
 
 input[type="submit"]{
@@ -163,12 +198,25 @@ input[type="button"]{
     border: none;
 }
 
+.imagenes{
+    /* width: fit-content; */
+    width: 50%;
+    height: fit-content;
+    display: flex; 
+    /* align-items: center; */
+    justify-content: center;
+}
+
 .logo{
-    position: relative;
-    height: 20vmax;
-    top: 50%;
+    position: static;
+    /* height: 20vmax; */
+    width: 75%;
+    /* align-self: stretch; */
+    /* margin-left: 5em; */
+    /* align-self: center; */
+    /* top: 50%;
     left: 6vmin;
-    margin-top: -10vmax;
+    margin-top: -10vmax; */
 }
 
 .flecha{
@@ -177,4 +225,262 @@ input[type="button"]{
     height: var(--alto-form);
     left: 37%;
     z-index: 100;
+}
+
+/* --------------------- BREAKPOINT 905px ----------------------------- */
+
+@media (max-width: 905px) {
+    .submit_buttons{
+        width: var(--width-input);
+        height: min-content;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 7vmin;
+    }
+
+    input[type="submit"], input[type="button"]{
+        position: static;
+        margin-top: 0em;
+        margin-bottom: 5vmin;
+        width: 75%;
+        padding: 0.5em 1em;
+        bottom: 0;
+        align-self: center;
+    }
+
+}
+
+
+@media (max-width: 540px) {
+    .fondo{
+        flex-direction: column;
+        /* justify-items: center; */
+        align-items: unset;
+        height: min-content;
+        min-height: fit-content;
+    }
+
+    .imagenes{
+        width: 100vw;
+        /* height: 30vh; */
+        min-height: 50vw;
+        /* height: 283px; */
+        /* max-height: 222px; */
+        position: relative;
+        /* background: red; */
+    }
+
+    .logo{
+        width: 80vw;
+        height: min-content;
+    }
+    
+    .bottom{
+        width: 100%;
+        max-height: 80vh;
+        /* height: unset; */
+        justify-content: flex-start;
+        /* display: flex; */
+        /* height: 70vh; */
+        /* max-height: 80vh; */
+        /* margin-top: 2em; */
+    }
+
+    .bottom h1{
+        position: static;
+        margin: 0 auto;
+        font-size: 6vh;
+        /* background-color: rgba(0, 0, 255, 0.226); */
+        margin-top: 22vw;
+        /* background-color: red; */
+        /* justify-self: flex-start; */
+        align-self: flex-start;
+        margin-bottom: 1em;
+        width: 100%;
+        min-height: min-content;
+    }
+    
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flecha{
+        position: absolute;
+        left: unset;
+        width: unset;
+        width: 100px;
+        height: 100vw;
+        top: 0;
+        /* left: 37%; */
+        align-self: center;
+        /* top: 0vh; */
+        /* justify-self: self-end; */
+        z-index: 100;
+        /* height: 133vw; */
+        /* width: 10vh; */
+        transform: rotate(90deg);
+    }
+
+
+    form{
+        position: static;
+        width: 100%;
+        /* background-color: rgba(255, 0, 0, 0.205); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .submit_buttons{
+        width: 100%;
+        margin-top: 15vw;
+    }
+
+    input[type="text"],
+    input[type="password"]{
+        width: 80%;
+        font-size: 2vh;
+    }
+
+    input[type="submit"],
+    input[type="button"]{
+        font-size: 2vh;
+        width: 60%;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder{
+        font-size: 2vh;
+    }
+    /* .submit_buttons{
+        background-color: rgba(170, 135, 204, 0.37);
+    }
+
+    .fondo{
+        padding-top: 0.1px;
+    }
+
+    .logo{
+        position: static;
+        display: block;
+        height: 20vmax;
+        margin: 0 auto;
+    }
+
+    .flecha{
+        position: absolute;
+        width: 25vw;
+        height: 100vw;
+        top: -4vh;
+        transform: rotate(90deg);
+    }
+
+    .bottom{
+        position: relative;
+        margin-top: 1em;
+        width: 100vw;
+        height: min-content;
+        float: none;
+    }
+
+    .bottom h1{
+        position: relative;
+        width: 35vw;
+        height: 18vh;
+        left: 25%;
+        margin-top: unset;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Sotokaromi Bold';
+        font-size: 9vh;
+    }
+
+    form{
+        position: static;
+        width: 100vw;
+        background-color: rgb(102, 102, 146);
+        left: 30%;
+    } */
+
+
+/*     
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"],
+    input[type="button"]{
+        width: 60vw;
+    }
+
+    .submit_buttons{
+        width: var(--width-input);
+        height: min-content;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10vh;
+    }
+
+    input[type="submit"], input[type="button"]{
+        position: static;
+        margin-top: 0em;
+        margin-bottom: 2em;
+        width: 75%;
+        padding: 0.5em 1em;
+        bottom: 0;
+        align-self: center;
+    } */
+}
+
+@media (max-width: 540px) and (max-height: 760px){
+    .logo{
+        width: 50vmax;
+    }
+
+    .bottom h1{
+        font-size: 8.5vmax;
+    }
+
+    input[type="text"],
+    input[type="password"]{
+        width: 80%;
+        font-size: 3vmax;
+    }
+
+    input[type="submit"],
+    input[type="button"]{
+        font-size: 3vmax;
+        width: 60%;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder{
+        font-size: 3vmax;
+    }
+}
+
+@media (max-width: 360px){
+    .logo{
+        width: 80vmin;
+    }
+
+    .bottom h1{
+        font-size: 7vmax;
+    }
+
+    input[type="text"],
+    input[type="password"]{
+        width: 80%;
+        font-size: 6vmin;
+    }
+
+    input[type="submit"],
+    input[type="button"]{
+        font-size: 6vmin;
+        width: 60%;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder{
+        font-size: 6vmin;
+    }
 }

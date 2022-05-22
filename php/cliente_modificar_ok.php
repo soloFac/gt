@@ -13,9 +13,10 @@
             $conexion = conectar();
 
             $consulta = 'UPDATE usuarios SET ';
-            if (!empty($_POST['telefono'])) && !empty($_POST['codigo_postal'])) {   //como concatenar variables de tipo entero y string con foreach
-                $consulta = 
-            }
+            // Completar!!!!
+            // if (!empty($_POST['telefono'])) && !empty($_POST['codigo_postal'])) {   //como concatenar variables de tipo entero y string con foreach
+            //     $consulta = 
+            // }
             foreach ($_POST as $clave => $valor) {
                 $consulta .= $clave . ' = "' .$valor.'", ';
             }

@@ -153,10 +153,10 @@ form{
     -ms-border-radius: 0.6em;
     -o-border-radius: 0.6em;
 }
-
+/* 
 input[type="date"]{
-    /* padding: 0.3em; */
-}
+
+} */
 
 .form__item:nth-child(odd){
     margin-left: 12%;

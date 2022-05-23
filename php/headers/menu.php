@@ -12,7 +12,7 @@
                     <a class="menu-principal__item__a" href="<?php echo $ruta?>php/producto/listado.php">Productos</a>
                 </li>
                 <li class="menu-principal__item">
-                    <a class="menu-principal__item__a" href="<?php echo $ruta?>html/logueo.html">Login</a>
+                    <a class="menu-principal__item__a" href="<?php echo $ruta?>php/session/login.php">Login</a>
                 </li>
                 <li class="menu-principal__item">
                     <a class="menu-principal__item__a" href="<?php echo $ruta?>php/cliente/form_nuevo.php">Registrarme</a>

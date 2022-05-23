@@ -1,0 +1,32 @@
+<?php
+  $ruta = '../../';
+
+  include '../headers/header.php';
+
+  echo '<link rel="stylesheet" href="../../css/login.css">';
+
+  include '../headers/menu.php';
+
+  // $ruta = '../../';
+
+  echo '<section class="fondo">
+          <article class="imagenes">
+              <img src="../../img/login/logo.png" alt="logo" class="logo">
+          </article>
+          <img src="../../img/login/flecha.png" alt="flecha" class="flecha">
+          <article class="rigth bottom">
+              <h1>Ingresar a mi cuenta</h1>
+              <form action="#" method="post">
+                  <input type="text" name="usuario" placeholder="usuario" maxlength="80" id="usuario" required>
+
+                  <input type="password" name="password" placeholder="password" maxlength="60" id="password" required>
+
+                  <section class="submit_buttons">
+                      <a class="link_volver" href="../../index.php"><input type="button" value="Volver"></a>
+                      <input type="submit" value="Entrar">
+                  </section>
+              </form>
+          </article>
+        </section>';
+
+?>

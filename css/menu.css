@@ -107,7 +107,7 @@
 
 /*------------------------------------ MENU EFECTO SOMBRA CSS ---------------------------------------*/
 
-a{
+.menu-principal__item__a{
     position: relative;
     padding: calc(var(--alto-menu) - 2.6em) 1.5em;
     font-family: 'DIN2014 DemiBold';
@@ -123,7 +123,7 @@ a{
     -o-transition: 0.6s;
 }
 
-a:hover{
+.menu-principal__item__a:hover{
     color: #0f3d66;
     padding: calc(var(--alto-menu) - 2.6em) 1.5em;
     background: var(--color-menu);

@@ -3,6 +3,7 @@
 
   include '../headers/header.php';
 
+  // estilo propio de esta pagina
   echo '<link rel="stylesheet" href="../../css/login.css">';
 
   include '../headers/menu.php';
@@ -14,6 +15,7 @@
               <img src="../../img/login/logo.png" alt="logo" class="logo">
           </article>
           <img src="../../img/login/flecha.png" alt="flecha" class="flecha">
+          <img src="../../img/login/flecha-horizontal.png" alt="flecha" class="flecha-horizontal">
           <article class="rigth bottom">
               <h1>Ingresar a mi cuenta</h1>
               <form action="#" method="post">

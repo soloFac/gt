@@ -225,6 +225,10 @@ input[type="button"] {
     z-index: 100;
 }
 
+.flecha-horizontal{
+    display: none;
+}
+
 /* --------------------- BREAKPOINT 905px ----------------------------- */
 
 @media (max-width: 905px) {
@@ -270,6 +274,7 @@ input[type="button"] {
     }
 }
 
+/* --------------------- BREAKPOINT 540px ----------------------------- */
 
 @media (max-width: 540px) {
     .fondo {
@@ -280,7 +285,7 @@ input[type="button"] {
 
     .imagenes {
         width: 100vw;
-        min-height: 50vw;
+        min-height: min-content;
         position: relative;
     }
 
@@ -298,8 +303,8 @@ input[type="button"] {
     .bottom h1 {
         position: static;
         margin: 0 auto;
-        font-size: 5vmin;
-        margin-top: 22vw;
+        font-size: 8vmin;
+        margin-top: 12vw;
         align-self: flex-start;
         margin-bottom: 1em;
         width: 100%;
@@ -311,7 +316,7 @@ input[type="button"] {
         flex-direction: column;
     }
 
-    .flecha {
+    /* .flecha {
         position: absolute;
         left: unset;
         width: unset;
@@ -321,8 +326,23 @@ input[type="button"] {
         align-self: center;
         z-index: 100;
         transform: rotate(90deg);
+    } */
+
+    .flecha {
+        display: none;
     }
 
+    .flecha-horizontal{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        top: 28vh;
+    }
+
+    .rigth{
+        background-color: #c642ff;
+    }
 
     form {
         position: static;
@@ -367,7 +387,7 @@ input[type="button"] {
     }
 
     .bottom h1 {
-        font-size: 12vmin;
+        /* font-size: 12vmin; */
     }
 
     .bottom {

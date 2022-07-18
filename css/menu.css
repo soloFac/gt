@@ -9,7 +9,7 @@
 /*------------------------------------ VARIABLES ---------------------------------------*/
 
 :root{
-  --alto-menu: 10vh;
+  --alto-menu: 65px;
   --color-menu: #FDD106;
 }
 
@@ -54,7 +54,7 @@
 .menu-principal{
     position: relative;
     width: 100%;
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(230, 63, 63);
     height: var(--alto-menu);
     min-height: 55px;
 }
@@ -74,11 +74,14 @@
 
 .menu-principal__item{
     display: inline-block;
+    height: 100%;
+    /* min-height: 55px; */
+
 }
 
 .menu-principal__logo{
     line-height: var(--alto-menu);
-    min-height: 55px;
+    /* min-height: 55px; */
 }
 
 .menu-principal__logo__img{
@@ -111,7 +114,7 @@
 /*------------------------------------ MENU EFECTO SOMBRA CSS ---------------------------------------*/
 
 .menu-principal__item__a{
-    position: relative;
+    /* position: relative; */
     padding: calc(var(--alto-menu) - 2.8em) 1.5em;
     font-family: 'DIN2014 DemiBold';
     color: var(--color-menu);

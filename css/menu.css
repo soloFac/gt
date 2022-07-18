@@ -47,10 +47,6 @@
 
 /*------------------------------------ CSS PARA MENU ---------------------------------------*/
 
-/* .menu{
-    background: black;
-} */
-
 .menu-principal{
     position: relative;
     width: 100%;
@@ -62,8 +58,6 @@
     position: absolute;
     width: max-content;
     right: 0;
-    /* left: 30vw; */
-    /* background-color: red; */
     line-height: var(--alto-menu);
     min-height: 55px;
 }
@@ -75,13 +69,11 @@
 .menu-principal__item{
     display: inline-block;
     height: 100%;
-    /* min-height: 55px; */
 
 }
 
 .menu-principal__logo{
     line-height: var(--alto-menu);
-    /* min-height: 55px; */
 }
 
 .menu-principal__logo__img{
@@ -99,7 +91,6 @@
 }
 
 .menu-principal__item:nth-child(3) a{
-    /* background: rgb(0, 0, 0); */
     color: rgb(179, 179, 179);
 }
 
@@ -114,13 +105,11 @@
 /*------------------------------------ MENU EFECTO SOMBRA CSS ---------------------------------------*/
 
 .menu-principal__item__a{
-    /* position: relative; */
     padding: calc(var(--alto-menu) - 2.8em) 1.5em;
     font-family: 'DIN2014 DemiBold';
     color: var(--color-menu);
     text-transform: uppercase;
-    /*letter-spacing: 0px;
-    */text-decoration: none;
+    text-decoration: none;
     font-size: 15px;
     transition: 0.6s;
     -webkit-transition: 0.6s;

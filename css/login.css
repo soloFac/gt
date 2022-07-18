@@ -307,8 +307,8 @@ input[type="button"] {
     .bottom h1 {
         position: static;
         margin: 0 auto;
-        font-size: 8vmin;
-        margin-top: 13vh;
+        font-size: 10vmin;
+        margin-top: 14vh;
         align-self: flex-start;
         margin-bottom: 1em;
         width: 100%;
@@ -396,19 +396,22 @@ input[type="button"] {
 @media (max-width: 540px) and (max-height: 760px) {
     .fondo {
         height: 100vh;
+        /* min-height: ; */
     }
 
     .logo {
-        width: 50vmax;
+        width: 16em;
     }
 
     .bottom h1 {
         font-size: 9vmin;
+        margin-top: 22vh;
     }
 
     .bottom {
-        height: min-content;
-        max-height: 120vh;
+        /* height: min-content; */
+        min-height: min-content;
+        height: 100%;
     }
 
 
@@ -434,48 +437,84 @@ input[type="button"] {
     }
 }
 
-@media (max-height: 487px) {
+@media (max-width: 540px) and (max-height: 487px) {
     .logo {
-        width: 50vmax;
+        width: 15.5em;
     }
 
     .bottom h1 {
         font-size: 2.1em;
-        /* background-color: red; */
+    }
+
+    .bottom{
+        min-height: min-content;
+        height: 100%;
     }
 
     .fondo {
-        height: 100vh;
+        height: 110vh;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) and (max-height: 760px) {
+    .logo {
+        width: 15.5em;
+    }
+
     .fondo {
         height: 100vh;
     }
 
-    /* .logo {
-        width: 80vmin;
-    }
-
     .bottom h1 {
-        font-size: 7vmax;
+        font-size: 11vmin;
+        margin-top: 20vh;
+        margin-bottom: 1.2em;
     }
 
-    input[type="text"],
-    input[type="password"] {
-        width: 80%;
-        font-size: 6vmin;
+    .bottom{
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 380px) and (max-height: 760px) {
+    .logo {
+        width: 16.5em;
     }
 
-    input[type="submit"],
-    input[type="button"] {
-        font-size: 6vmin;
-        width: 60%;
+    .fondo {
+        max-height: 100vh;
     }
 
-    input[type="text"]::placeholder,
-    input[type="password"]::placeholder {
-        font-size: 6vmin;
-    } */
+    .bottom{
+        min-height: min-content;
+        height: 100%;
+    }
+}
+
+@media (max-width: 380px) and (max-height: 510px) {
+    .logo{
+        width: 14em;
+    }
+}
+
+@media (max-width: 350px) and (max-height: 760px){
+    .logo{
+        width: 14em;
+    }
+}
+
+/* Galaxy Fold */
+@media (max-width: 300px) and (max-height: 760px){
+    .logo{
+        width: 14em;
+        margin-top: 1em;
+    }
+}
+
+
+@media (min-width: 560px) and (orientation: landscape) {
+    .fondo, .rigth, .flecha{
+        min-height: 380px;
+    }
 }

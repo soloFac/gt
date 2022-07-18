@@ -56,6 +56,7 @@
     width: 100%;
     background-color: rgb(24, 24, 24);
     height: var(--alto-menu);
+    min-height: 55px;
 }
 .menu-principal__ul{
     position: absolute;
@@ -64,6 +65,7 @@
     /* left: 30vw; */
     /* background-color: red; */
     line-height: var(--alto-menu);
+    min-height: 55px;
 }
 
 .menu-principal__ul, .menu-principal__logo{
@@ -76,6 +78,7 @@
 
 .menu-principal__logo{
     line-height: var(--alto-menu);
+    min-height: 55px;
 }
 
 .menu-principal__logo__img{

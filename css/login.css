@@ -4,7 +4,7 @@
     --submit-bg: #705E78;
     /* formulario */
     --ancho-form: 50%;
-    --alto-form: 90vh;
+    --alto-form: 100vh;
     --bg-form: #1a1a1ace;
     --bg-color-form: #1A1A1A;
     --bg-login: #ffc80067;
@@ -60,7 +60,7 @@ input:-webkit-autofill {
 }
 
 .fondo {
-    width: 100vw;
+    /* width: 100vw; */
     height: var(--alto-form);
     background: url(../img/login/login.jpg);
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ input[type="button"] {
     margin-top: 2em;
     padding: 0.5em 2em;
     letter-spacing: 0.1em;
-    /* bottom: 0; */
+    border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     -ms-border-radius: 0.5em;
@@ -202,11 +202,9 @@ input[type="button"] {
 
 
 .imagenes {
-    /* width: fit-content; */
     width: 50%;
     height: fit-content;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -280,7 +278,7 @@ input[type="button"] {
     .fondo {
         flex-direction: column;
         align-items: unset;
-        width: 100%;
+        /* width: 100%; */
         /* para que la foto cubra todo el alto */
         min-height: 620px;
         height: 100vh;
@@ -293,7 +291,7 @@ input[type="button"] {
     }
 
     .logo {
-        width: 80vw;
+        width: 26em;
         height: min-content;
     }
 
@@ -301,7 +299,7 @@ input[type="button"] {
         width: 100%;
         min-height: 74vh;
         justify-content: flex-start;
-        clip-path: polygon(50% 9%, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
 
     .bottom h1 {
@@ -312,25 +310,12 @@ input[type="button"] {
         align-self: flex-start;
         margin-bottom: 1em;
         width: 100%;
-        /* min-height: min-content; */
     }
 
     body {
         display: flex;
         flex-direction: column;
     }
-
-    /* .flecha {
-        position: absolute;
-        left: unset;
-        width: unset;
-        width: 100px;
-        height: 100vw;
-        top: 0;
-        align-self: center;
-        z-index: 100;
-        transform: rotate(90deg);
-    } */
 
     .flecha {
         display: none;
@@ -409,7 +394,6 @@ input[type="button"] {
     }
 
     .bottom {
-        /* height: min-content; */
         min-height: min-content;
         height: 100%;
     }
@@ -516,5 +500,27 @@ input[type="button"] {
 @media (min-width: 560px) and (orientation: landscape) {
     .fondo, .rigth, .flecha{
         min-height: 380px;
+    }
+}
+
+
+@media (min-height: 650px) and (max-width: 540px){
+    .logo{
+        width: 20em;
+    }
+}
+
+@media (min-height: 815px) and (max-width: 540px){
+    .logo{
+        width: 43vh;
+        margin-top: 2vh;
+    }
+}
+
+
+
+@media (min-height: 1020px) and (orientation: portrait) {
+    .logo{
+        margin-top: 3.5vh;
     }
 }

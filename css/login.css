@@ -504,13 +504,14 @@ input[type="button"] {
 }
 
 
-@media (min-height: 650px) and (max-width: 540px){
+@media (max-width: 540px) and (min-height: 650px){
     .logo{
-        width: 20em;
+        width: 40vh;
+        margin-top: 1.5vh;
     }
 }
 
-@media (min-height: 815px) and (max-width: 540px){
+@media (max-width: 540px) and (min-height: 815px){
     .logo{
         width: 43vh;
         margin-top: 2vh;

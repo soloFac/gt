@@ -1,129 +1,136 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    /* background-color: red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* background-color: red; */
 }
 
 /*------------------------------------ VARIABLES ---------------------------------------*/
 
 :root{
-  --alto-menu: 10vh;
-  --color-menu: #FDD106;
+--alto-menu: 10vh;
+--color-menu: #FDD106;
 }
 
 /*------------------------------------ FUENTES ---------------------------------------*/
 
 @font-face {
-    font-family: 'Aileron Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Aileron Regular'), url('../fonts/Ailerons-Regular.otf') format('opentype');
+  font-family: 'Aileron Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Aileron Regular'), url('../fonts/Ailerons-Regular.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'DIN2014 Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('DIN2014 Regular'), url('../fonts/DIN2014-Regular.woff') format('opentype');
+  font-family: 'DIN2014 Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DIN2014 Regular'), url('../fonts/DIN2014-Regular.woff') format('opentype');
 }
 
 @font-face {
-    font-family: 'DIN2014 DemiBold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('DIN2014 DemiBold'), url('../fonts/DIN2014-DemiBold.woff') format('opentype');
+  font-family: 'DIN2014 DemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DIN2014 DemiBold'), url('../fonts/DIN2014-DemiBold.woff') format('opentype');
 }
 
 @font-face {
-    font-family: 'DIN2014 ExtraBold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('DIN2014 ExtraBold'), url('../fonts/DIN2014-ExtraBold.woff') format('opentype');
+  font-family: 'DIN2014 ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DIN2014 ExtraBold'), url('../fonts/DIN2014-ExtraBold.woff') format('opentype');
 }
-
-
 
 /*------------------------------------ CSS PARA MENU ---------------------------------------*/
 
 .menu-principal{
-    position: relative;
-    width: 100%;
-    background-color: rgb(24, 24, 24);
-    height: var(--alto-menu);
-    min-height: 55px;
-}
-.menu-principal__ul{
-    position: absolute;
-    width: max-content;
-    right: 0;
-    line-height: var(--alto-menu);
-    min-height: 55px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  place-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(24, 24, 24);
+  height: var(--alto-menu);
+  min-height: 55px;
 }
 
-.menu-principal__ul, .menu-principal__logo{
-    display: inline-block;
+/* .menu */
+
+
+.menu-principal__ul{
+  width: min-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  place-content: center;
+  height: var(--alto-menu);
+  /* background-color: aqua; */
 }
 
 .menu-principal__item{
-    display: inline-block;
-    height: 100%;
-    min-height: 55px;
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  /* place-items: center; */
+  /* align-items: center; */
+  /* background-color: antiquewhite; */
 }
 
-.menu-principal__logo{
-    line-height: var(--alto-menu);
+.menu-principal__item__a{
+  /* position: absolute; */
+  /* z-index: 100; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'DIN2014 DemiBold';
+  /* color: var(--color-menu); */
+  /* align-self: center; */
+  text-transform: uppercase;
+  text-decoration: none;
+  /* background-color: red; */
+  
+  height: var(--alto-menu);
+  color: var(--color-menu);
+  padding: 0em 1.5em;
+  font-size: 1.2vmax;
+  text-align: center;
+}
+
+
+/* ---------- HEADER Y LOGO ---------------- */
+
+.menu-principal__logo{              /* HEADER */
+  /* position: relative; */
+  /* line-height: var(--alto-menu); */
+  /* background-color: yellow; */
+  /* height: min-content; */
+  margin-left: 1em;
 }
 
 .menu-principal__logo__img{
-    position: absolute;
-    width: 15vmax;
-    top:50%;
-    left: 6em;
-    transform: translate(-50%,-50%);
-    max-width: 50%;
-    text-align: center;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
+  /* position: absolute; */
+  width: 10em;
 }
 
-.menu-principal__item:nth-child(3) a{
-    color: rgb(179, 179, 179);
-}
+/* -------------------------------- EFFECT HOVER --------------------------------------------- */
 
-.menu-principal__item:nth-child(3) a:hover{
-    color: rgb(75, 75, 75);
-    /* padding: 4vmax 1.5em; */
-    background: #eee241;
-    box-shadow: 0 0 10px var(--color-menu), 0 0 15px var(--color-menu), 0 0 80px var(--color-menu);
-    transition-delay: 0.1s;
-    /* height: var(--alto-menu); */
-}
-
-/*------------------------------------ MENU EFECTO SOMBRA CSS ---------------------------------------*/
-
+.menu-principal__item,
 .menu-principal__item__a{
-    height: 100%;
-    padding: 3.8vh 1.5em;
-    font-family: 'DIN2014 DemiBold';
-    color: var(--color-menu);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1.2vmax;
-    transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
 }
 
 .menu-principal__item__a:hover{
-    color: #0f3d66;
-    /* padding: 4vmax 1.5em; */
-    background: var(--color-menu);
-    box-shadow: 0 0 1px var(--color-menu), 0 0 5px var(--color-menu), 0 0 80px var(--color-menu);
-    transition-delay: 0.1s;
+  color: white;
+  background: var(--color-menu);
+  box-shadow: 0 0 1px var(--color-menu), 0 0 5px var(--color-menu), 0 0 80px var(--color-menu);
+  transition-delay: 0.1s;
 }
+

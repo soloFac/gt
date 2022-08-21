@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/footer.css">
-    <!-- <link rel="stylesheet" href="../../css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <title>GT Bicicles</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
                 </li>
 
                 <li class="menu-principal__item">
-                    <a href="php/producto_listado.php" class="menu-principal__item__a" >
+                    <a href="php/producto/producto_listado.php" class="menu-principal__item__a" >
                         Ver productos
                     </a>
                     <!-- <ul>
@@ -37,7 +37,7 @@
                     </ul> -->
                 </li>
                 <li class="menu-principal__item">
-                    <a href="html/producto_nuevo.html" class="menu-principal__item__a" >
+                    <a href="html/producto/producto_nuevo.html" class="menu-principal__item__a" >
                         Agregar productos
                     </a>
                 </li>
@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li class="menu-principal__item">
-                    <a href="php/cerrar_session.php" class="menu-principal__item__a" >
+                    <a href="./php/session/cerrar_session.php" class="menu-principal__item__a" >
                         Cerrar session
                     </a>
                 </li>

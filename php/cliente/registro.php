@@ -2,7 +2,7 @@
     $ruta = '../../';
     require('../headers/header.php');
     echo '
-            <link rel="stylesheet" href="'.$ruta.'css/form_nuevo.css">
+            <link rel="stylesheet" href="'.$ruta.'css/cliente/registro.css">
         </head>';
     require('../headers/menu.php')
 ?>
@@ -10,7 +10,7 @@
 <h1 class="title">Crear tu cuenta en GT</h1>
 <section>
     <article class="article">
-        <form action="../php/cliente_nuevo.php" method="POST" enctype="multipart/form-data">
+        <form action="../php/cliente/registrar.php" method="POST" enctype="multipart/form-data">
 
             <div class="form__item">
                 <label for="usuario"></label>
@@ -101,9 +101,9 @@
             <input type="hidden" value="comun" name="tipo_usuario">
         </form>
     </article>
-    <article>
+    <!-- <article>
         <img src="../../img/form_nuevo/logo.jpg" alt="">
-    </article>
+    </article> -->
 </section>
 
 <?php

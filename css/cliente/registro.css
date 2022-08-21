@@ -1,0 +1,21 @@
+:root{
+    --ancho: 50vw;
+    --alto-section: 85vh;
+    --input-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+}
+
+section{
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    /* background-color: rgb(117, 4, 4); */
+    width: 100vw;
+    height: var(--alto-section);
+}

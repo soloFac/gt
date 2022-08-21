@@ -15,7 +15,7 @@
                     <a class="menu-principal__item__a" href="<?php echo $ruta?>php/session/login.php">Login</a>
                 </li>
                 <li class="menu-principal__item">
-                    <a class="menu-principal__item__a" href="<?php echo $ruta?>php/cliente/form_nuevo.php">Registrarme</a>
+                    <a class="menu-principal__item__a" href="<?php echo $ruta?>php/cliente/registro.php">Registrarme</a>
                 </li>
             </ul>
         </nav>

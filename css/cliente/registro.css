@@ -6,7 +6,7 @@
     --submit-bg: #705E78;
     /* formulario */
     --ancho-form: 50%;
-    --alto-form: 100vh;
+    --alto-form: 90vh;
     --bg-form: #1a1a1ace;
     --bg-color-form: #1A1A1A;
     --bg-login: #ffc80067;
@@ -47,25 +47,16 @@ section{
 
 @font-face {
     font-family: 'Sotokaromi Bold';
-    src: url(../font/SotokaromiBold.otf) format('opentype');
+    src: url(../../fonts/SotokaromiBold.otf) format('opentype');
     font-weight: bold;
 }
 
-@font-face {
-    font-family: 'ApercuMonoPro';
-    src: url(../font/monopro/ApercuMonoProRegular.ttf) format('opentype');
-    /* font-weight: bold; */
-}
 
 @font-face {
     font-family: 'DIN2014 Regular';
-    src: url(../font/din/DIN2014-Regular.ttf) format('opentype');
+    src: url(../../fonts/din/DIN2014-Regular.ttf) format('opentype');
 }
 
-@font-face {
-    font-family: 'Bebas Neue';
-    src: url(../font/bebas_neue/BebasNeue-Regular.ttf) format('opentype');
-}
 
 /* change bg autocomplete chrome */
 input:-webkit-autofill,
@@ -80,9 +71,9 @@ input:-webkit-autofill{
 }
 
 .fondo{
-    width: 100vw;
+    width: 100%;
     height: var(--alto-form);
-    background: url(../img/login.jpg);
+    background: url(../../img/login/login.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;

@@ -63,7 +63,7 @@
                     <input type="file" class="form__item" id="foto_usuario" placeholder="foto usuario" name="foto"> -->
 
                     <div class="siguiente">
-                        <img src="../../img/login/siguiente.png" class="siguiente_img" alt="Siguiente">
+                        <img src="../../img/registro/siguiente.png" class="siguiente_img" alt="Siguiente">
                     </div>
 
                     <!-- Botones -->
@@ -81,5 +81,5 @@
 
 
 <?php
-require('../footer.php');
+// require('../footer.php');
 ?>

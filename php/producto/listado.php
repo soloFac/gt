@@ -18,7 +18,7 @@
 
         include "conexion.php";
         $conexion = conectar();
-        $consulta = 'SELECT * FROM articulos';
+        $consulta = 'SELECT * FROM articulos'; 
 
         $resultado = mysqli_query($conexion, $consulta);
         if (mysqli_num_rows($resultado)>0) {

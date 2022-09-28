@@ -1,9 +1,11 @@
 <?php
     session_start();
-    if (isset($_SESSION['usuario']) && isset($_SESSION['tipo_usuario']) 
-    && isset($_SESSION['dni']) && $_SESSION['tipo_usuario'] == 'admin') // CAMBIAR A COMUN
+    if (!empty($_SESSION['usuario']) && !empty($_SESSION['tipo_usuario'])
+        && !empty($_SESSION['dni']) && $_SESSION['tipo_usuario'] == 'admin') // CAMBIAR A COMUN
     { 
+        include '../helpers/conexion.php';
         include 'header_admin_part_1.php';
+        include 'header_admin_part_2.php';
 
         $nombre = $_SESSION['usuario'];
         $display = $_COOKIE[$nombre];
@@ -11,12 +13,8 @@
         if (!empty($display) && $display == 'display_block') {
             echo '<link rel="stylesheet" href="../css/css_configuracion_admin.css">';
         }
-
-        include 'header_admin_part_2.php';
-
         echo '<section id="section_productos">';
 
-        include "conexion.php";
         $conexion = conectar();
         $consulta = 'SELECT * FROM articulos'; 
 

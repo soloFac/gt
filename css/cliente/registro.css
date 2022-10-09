@@ -31,7 +31,7 @@
     --input-color: white;
 }
 
-*{
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,6 +44,8 @@ section{
     width: 100vw;
     height: var(--alto-section);
 } */
+
+
 
 @font-face {
     font-family: 'Sotokaromi Bold';
@@ -370,4 +372,8 @@ input[type="button"]{
     .siguiente_img{
         width: 4vmax;
     }
+}
+
+.second_fill{
+    display: none;
 }

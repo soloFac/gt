@@ -1,9 +1,9 @@
 <?php
     function conectar(){
-        $servidor = 'localhost';
-        $usuario = 'root';
-        $clave = '';
-        $db = 'gt';
+        $servidor = 'bsbgfb5nnr4a7vsjqaum-mysql.services.clever-cloud.com';
+        $usuario = 'uh7n12tmrcqyzbxo';
+        $clave = 'QbIF0RGLB33FAs5AGbQK';
+        $db = 'bsbgfb5nnr4a7vsjqaum';
         
         $conexion = mysqli_connect($servidor, $usuario, $clave, $db);
         if ($conexion) {

@@ -11,4 +11,23 @@
     }
     
     include 'php/footer.php';
+
+    // include 'php/session/conexion.php';
+
+    // $conexion = conectar();
+
+    // if($conexion){
+    //     echo '<p>Hay conexion</p>';
+    //     $query = 'SELECT * FROM usuarios';
+    //     $result = mysqli_query($conexion, $query);
+        
+    //     $numRows = mysqli_num_rows($result);
+    //     if ($numRows > 0) {
+    //         while ($fila = mysqli_fetch_array($result)) {
+    //             echo '<p>'.$fila['nombre'].'</p>';
+    //         }
+    //     }
+
+
+    // }
 ?>

@@ -9,7 +9,7 @@
 
             $dato = $_POST['display'];
             
-            setcookie($nombre, $dato, time()+ 180*60*60*24);
+            setcookie($nombre, $dato, time() + 180*60*60*24);
 
             echo "Guardado exitoso";
 

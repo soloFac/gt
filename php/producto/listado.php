@@ -3,7 +3,7 @@
     if (!empty($_SESSION['usuario']) && !empty($_SESSION['tipo_usuario'])
         && !empty($_SESSION['dni']) && $_SESSION['tipo_usuario'] == 'admin') // CAMBIAR A COMUN
     { 
-        include '../helpers/conexion.php';
+        include '../session/conexion.php';
         include 'header_admin_part_1.php';
         include 'header_admin_part_2.php';
 
@@ -58,7 +58,7 @@
         include '../headers/header.php';
         include '../headers/menu.php';
 
-        include "../helpers/conexion.php";
+        include "../session/conexion.php";
         $conexion = conectar();
         $consulta = 'SELECT * FROM articulos';
 

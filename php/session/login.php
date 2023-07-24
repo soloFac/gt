@@ -1,14 +1,14 @@
 <?php
   $ruta = '../../';
+  $css = ['normalize.css', 'menu.css', 'footer.css', 'inicio.css'];
 
   include '../headers/header.php';
-
+  
   // estilo propio de esta pagina
   echo '<link rel="stylesheet" href="../../css/login.css">';
-
+  
   include '../headers/menu.php';
 
-  // $ruta = '../../';
 
   echo '<section class="fondo">
           <article class="imagenes">

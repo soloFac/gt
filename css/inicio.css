@@ -11,6 +11,16 @@
 }
 
 @font-face {
+  font-family: 'Swiss721 BT';
+  src: url(../fonts/swiss721/Swiss-721-BT.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'DINPro Regular';
+  src: url(../fonts/DIN2014-Regular.ttf) format('opentype');
+}
+
+@font-face {
   font-family: 'Sotokaromi Bold';
   src: url(../fonts/SotokaromiBold.otf) format('opentype');
   font-weight: bold;
@@ -22,10 +32,12 @@
   font-weight: bold;
 }
 
+/* --------------------------- INICIO --------------------------- */
+
 .inicio {
   display: flex;
   flex-direction: row;
-  background-image: url("../public/img/inicio.jpg");
+  background-image: url("../public/img/inicio/inicio.jpg");
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position-y: -50vh;
@@ -100,3 +112,81 @@
   z-index: 1000;
 }
 
+/* --------------------------- PRODUCTOS --------------------------- */
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* position: relative; */
+}
+
+.productos__texto-fondo{
+  position: absolute;
+  font-family: 'Swiss721 BT';
+  text-transform: uppercase;
+  font-size: 18vw;
+  color: #EB5500;
+}
+
+.productos__imagen-fondo {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+
+.productos__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98.8vw; /* Todo: Revisar, debería ser un width que se ajuste perfectamente al ancho visible, sin incluir la barra de navegación vertical */
+  height: 100vh;
+  background: linear-gradient(to right, #ffc800cc, #eb7900ef)
+}
+
+.productos__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  height: 90vh;
+  filter: contrast(15%) brightness(35%);
+  -webkit-filter: contrast(15%) brightness(35%);
+  font-family: 'Sotokaromi Bold';
+  font-size: 2em;
+  z-index: 1000;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+
+.productos__item:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+  filter: contrast(100%) brightness(100%);
+  -webkit-filter: contrast(100%) brightness(100%);
+  color: white;
+  transition: background-color 0.3s 0.1s;
+  transition: filter 0.3s ease-in-out;
+  transition: color 0.5s 0s;
+  -webkit-transition: filter 0.3s ease-in-out;
+  -moz-transition: filter 0.3s ease-in-out;
+  -ms-transition: filter 0.3s ease-in-out;
+  -o-transition: filter 0.3s ease-in-out;
+}
+
+.productos__item img {
+  width: 15vw;
+  height: 15vw;
+  margin-bottom: 1em;
+}
+
+.productos__item img:hover {
+  /* filter: drop-shadow(1px 1px 100px #fafafa); */
+}

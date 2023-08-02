@@ -10,6 +10,19 @@
   --background-color-inicio: #1a1a1ad0;
 }
 
+html::-webkit-scrollbar {
+  position: absolute;
+  width: 2px;     
+  /* height: 10px;  Barra vertical  */
+  display: block;
+  background-color: rgb(0, 0, 0);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ffc40193;
+  border-radius: 4px;
+}
+
 @font-face {
   font-family: 'Swiss721 BT';
   src: url(../fonts/swiss721/Swiss-721-BT.ttf) format('opentype');
@@ -143,7 +156,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 98.8vw; /* Todo: Revisar, debería ser un width que se ajuste perfectamente al ancho visible, sin incluir la barra de navegación vertical */
+  width: 100vw; /* Todo: Revisar, debería ser un width que se ajuste perfectamente al ancho visible, sin incluir la barra de navegación vertical */
   height: 100vh;
   background: linear-gradient(to right, #ffc800cc, #eb7900ef)
 }
@@ -153,7 +166,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 25vw;
+  width: 25%;
   height: 90vh;
   filter: contrast(15%) brightness(35%);
   -webkit-filter: contrast(15%) brightness(35%);
@@ -181,12 +194,95 @@
   -o-transition: filter 0.3s ease-in-out;
 }
 
+.productos__item p {
+  text-shadow: 2px 2px 10px #000000bd;
+}
+
 .productos__item img {
   width: 15vw;
   height: 15vw;
   margin-bottom: 1em;
+  filter: drop-shadow(2px 2px 10px #fafafa);
+  -webkit-filter: drop-shadow(2px 2px 10px #fafafa);
 }
 
-.productos__item img:hover {
-  /* filter: drop-shadow(1px 1px 100px #fafafa); */
+/* --------------------------- GALERIA --------------------------- */
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(100vw - 2px); /* TODO: resolver problema, no se ajusta exactamente */
+  height: 100vh;
+  background-image: url('../public/img/inicio/galeria/background.png');
+  background-size: cover;
+  background-position-y: -90vh;
+}
+
+.galeria__img {
+  width: 33.333%;
+  height: 33.333%;
+}
+
+/* ---------------- IMAGENES ---------------- */
+
+/* TODO: hacer animaciones con box-shadow y z-index */
+.galeria__img:nth-child(2) {
+  background-image: url('../public/img/inicio/galeria/Recurso\ 6-8.png');
+  background-size: cover;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.75); 
+  z-index: 1000;
+}
+
+.galeria__img:nth-child(4) {
+  background-image: url('../public/img/inicio/galeria/Recurso\ 5-8.png');
+  background-size: cover;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
+.galeria__img:nth-child(6) {
+  background-image: url('../public/img/inicio/galeria/Recurso\ 9-8.png');
+  background-size: cover;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
+.galeria__img:nth-child(9) {
+  background-image: url('../public/img/inicio/galeria/Recurso\ 8-8.png');
+  background-size: cover;
+   box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+ /* ---------------- COLORES ---------------- */
+
+.galeria__img:nth-child(1) {
+  background-color: rgba(128, 128, 128, 0.445);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.galeria__img:nth-child(3) {
+  background: linear-gradient(to bottom, #ffc800f8, #ebb400e1);
+   box-shadow: -2px 1px 10px 0px rgb(0, 0, 0);
+
+}
+
+.galeria__img:nth-child(5) {
+  background-color: #ff9100f8;
+   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.galeria__img:nth-child(7) {
+  background-color: rgba(128, 128, 128, 0.959);
+   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.galeria__img:nth-child(8) {
+  background: linear-gradient(to bottom, #ffc800f8, #eb7900e1);
+  /* box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.75); */
+  box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.75);
+
+  z-index: 1000;
 }
